@@ -7,6 +7,7 @@
     text-transform: uppercase;
     font-size: 22px;
     color: #703f0e;
+        margin: 3px 0 10px 0;
 	}
 	h2:first-letter{
     font-size: 24px;
@@ -14,6 +15,21 @@
     a{text-decoration:none}
     a:hover {
         color: #0e5196 !important;
+    }
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col-md-3 .arc_body{
+        margin: 0px -10px 10px 0px !important;
+    }
+    .skin_inner{
+        height:auto !important;
+    }
+    i{
+        color: #703f0e !important;
+        font-style: normal !important;
+        background: transparent !important;
     }
 </style>
 <div class="body-blog">
@@ -46,8 +62,8 @@
 <img src="http://dev2.i-igrushki.ru/otdykh-dosug/img/igrushkaped.jpg" width=100%>
 	</div>
 <div class="arc_body col-md-3">
-    <div class="arc_body">
-<h2>Рубрикация</h2>
+    <div class="arc_body" style="height: 700px;">
+        <a href="" style="text-decoration: none;"><h2>Рубрикация <i class="fa fa-mouse-pointer" aria-hidden="true"></i></h2></a>
     <br><a href="#">Авторские игрушки</a>
     <br><a href="#">Все для праздников</a>
     <br><a href="#">Головоломки и пазлы</a>
@@ -92,7 +108,7 @@
                 "SET_TITLE"			=> "N",
             ),
             $component);?>
-<div class="arc_body">
+<div class="arc_body" style="height: 200px;">
     <div class="blog-mainpage-side-left">
         <div class="blog-tab-container">
             <div class="blog-tab-left"></div>
@@ -226,56 +242,38 @@
         </div>
 
     </div>
-    <h2>СЛУЧАЙНАЯ СТАТЬЯ  </h2>
-	<div class="blog-author">
-			<a class="blog-author-icon" href="/igrushkapedia-wiki/?page=user&amp;user_id=848" title="Просмотреть блог пользователя"></a>
-			<a href="/igrushkapedia-wiki/?page=blog&amp;blog=igrushkapedia-wiki" id="anchor_O28b2nkd">Селиванова Дарья</a>	
-	</div>
 
-	<div class="blog-mainpage-title"><a href="/igrushkapedia-wiki/?page=post&amp;blog=igrushkapedia-wiki&amp;post_id=speedway">Автотрек</a></div>
-	<div class="blog-mainpage-content">
-	Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщ...	</div>
-	<div class="blog-mainpage-meta">
-		<a href="/igrushkapedia-wiki/?page=post&amp;blog=igrushkapedia-wiki&amp;post_id=speedway" title="Время публикации">22.04.2018 12:05:01</a>
-					<span class="blog-vert-separator"></span> <a href="/igrushkapedia-wiki/?page=post&amp;blog=igrushkapedia-wiki&amp;post_id=speedway" title="Просмотров">Просмотров:&nbsp;8</a>
-								<span class="rating_vote_text">
+<div class="blog-mainpage-side-right">
+    <div class="blog-tab-container">
+        <div class="blog-tab-left"></div>
+        <div class="blog-tab-right"></div>
+        <div class="blog-tab">
+            <div class="blog-tab-title">
+                <span id="new-posts-title">Случайная статья</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="blog-mainpage-item">
+        <div class="blog-author">
+            <a class="blog-author-icon" href="/club/user/848/" title="Просмотреть блог пользователя"></a>
+            <a href="/club/user/848/blog/" id="anchor_PaMJMTMT">Селиванова Дарья</a>
+        </div>
+        <div class="blog-clear-float"></div>
+        <div class="blog-mainpage-title"><a href="/club/user/848/blog/teddy-bear-teddy/">Плюшевый мишка «Тедди»</a></div>
+        <div class="blog-mainpage-content">
+            Мягкий плюшевый мишка- игрушка, без которой трудно представить детство практически любого ребенка. Н...	</div>
+        <div class="blog-mainpage-meta">
+            <a href="/club/user/848/blog/teddy-bear-teddy/" title="Время публикации">02.05.2018 12:36:17</a>
+            <span class="blog-vert-separator"></span> <a href="/club/user/848/blog/teddy-bear-teddy/" title="Просмотров">Просмотров:&nbsp;7</a>
+            <span class="rating_vote_text">
 		<span class="blog-vert-separator"></span>
-		<span class="ilike-light"><span class="bx-ilike-button " id="bx-ilike-button-BLOG_POST-2-1525247735"><span class="bx-ilike-right-wrap "><span class="bx-ilike-right">0</span></span><span class="bx-ilike-left-wrap"><a href="#like" class="bx-ilike-text">Нравится</a></span></span><span class="bx-ilike-wrap-block" id="bx-ilike-popup-cont-BLOG_POST-2-1525247735" style="display:none;"><span class="bx-ilike-popup"><span class="bx-ilike-wait"></span></span></span></span>
-<script type="text/javascript">
-BX.ready(function() {
-		if (!window.RatingLike && top.RatingLike)
-			RatingLike = top.RatingLike;
-
-		if (typeof(RatingLike) == 'undefined')
-			return false;
-
-		RatingLike.Set(
-			'BLOG_POST-2-1525247735',
-			'BLOG_POST',
-			'2',
-			'Y',
-			'848',
-			{'LIKE_Y' : 'Не нравится', 'LIKE_N' : 'Нравится', 'LIKE_D' : 'Это нравится'},
-			'light',
-			''
-		);
-
-		if (typeof(RatingLikePullInit) == 'undefined')
-		{
-			RatingLikePullInit = true;
-			BX.addCustomEvent("onPullEvent-main", function(command,params) {
-				if (command == 'rating_vote')
-				{
-					RatingLike.LiveUpdate(params);
-				}
-			});
-		}
-
-
-});
-</script>		</span>
-			</div>
-
+		<span class="ilike-light"><span class="bx-ilike-button" id="bx-ilike-button-BLOG_POST-4-1527064112"><span class="bx-ilike-right-wrap bx-you-like"><span class="bx-ilike-right">1</span></span><span class="bx-ilike-left-wrap"><a href="#like" class="bx-ilike-text">Не нравится</a></span></span><span class="bx-ilike-wrap-block" id="bx-ilike-popup-cont-BLOG_POST-4-1527064112" style="display:none;"><span class="bx-ilike-popup"><span class="bx-ilike-wait"></span></span></span></span>
+		</span>
+        </div>
+        <div class="blog-clear-float"></div>
+    </div>
+</div>
 
 	</div>
 
@@ -334,24 +332,50 @@ function BXBlogTabShow(id, type)
 }
 //-->
 </script>
+
 <div class="arc_body">
-<h2>Интересные факты</h2>
-	<div class="blog-mainpage-content arc_body">
+    <div class="blog-tab-container">
+        <div class="blog-tab-left"></div>
+        <div class="blog-tab-right"></div>
+        <div class="blog-tab">
+            <div class="blog-tab-title">
+                <span id="new-posts-title">Интересные факты</span>
+
+            </div>
+
+        </div>
+    </div>
+
+	<div class="blog-mainpage-content arc_body" style="margin-bottom: 0px;">
+        <div class="blog-mainpage-title"><a href="/club/user/848/blog/teddy-bear-teddy/">Автотрек</a></div>
 Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщикам всегда интересно проходить захватывающие виражи сложных трасс, выполнять крутые скачки и преодолевать пропасти, управляя крутыми гоночными машинами! Но трасса полна неожиданностей, так что готовьтесь к серьезным гонкам. 
-<br><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a>
-<br>
+        <p class="text-right"><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a></p>
+    <hr>
+<div class="blog-mainpage-title"><a href="/club/user/848/blog/teddy-bear-teddy/">Автотрек</a></div>
+Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщикам всегда интересно проходить захватывающие виражи сложных трасс, выполнять крутые скачки.
+        <p class="text-right"><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a></p>
+<hr>
+
+        <div class="blog-mainpage-title"><a href="/club/user/848/blog/teddy-bear-teddy/">Автотрек</a></div>
+Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщикам всегда интересно проходить захватывающие виражи сложных трасс, выполнять крутые скачки и преодолевать пропасти, управляя крутыми гоночными машинами! Но трасса полна неожиданностей, так что готовьтесь к серьезным гонкам.
+        <p class="text-right"><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a></p>
 </div>
-	<div class="blog-mainpage-content arc_body">
-Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщикам всегда интересно проходить захватывающие виражи сложных трасс, выполнять крутые скачки и преодолевать пропасти, управляя крутыми гоночными машинами! Но трасса полна неожиданностей, так что готовьтесь к серьезным гонкам. 
-<br><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a>
-<br>
 </div>
-	<div class="blog-mainpage-content arc_body">
-Автотрек – это своеобразная гоночная трасса с несколькими машинками для соревнований. Маленьким гонщикам всегда интересно проходить захватывающие виражи сложных трасс, выполнять крутые скачки и преодолевать пропасти, управляя крутыми гоночными машинами! Но трасса полна неожиданностей, так что готовьтесь к серьезным гонкам. 
-<br><a href="http://dev2.i-igrushki.ru/igrushkapedia-wiki/?page=post&blog=igrushkapedia-wiki&post_id=speedway">Читать далее...</a>
-<br>
 </div>
-</div></div>
+
+
+<div style="clear:both;"></div>
+<div class="row arc_body" style="width:100%;margin-left:0px;">
+<div class="col-md-4">
+    <h2>Игрушкапоиск баннер</h2>
+</div>
+    <div class="col-md-4">
+        <h2>Магазин баннер</h2>
+    </div>
+    <div class="col-md-4">
+        <h2>Журналы баннер</h2>
+    </div>
+</div>
 <!--div class="blog-mainpage-side-left">
 <div class="blog-tab-container">
 	<div class="blog-tab-left"></div>
@@ -708,4 +732,38 @@ if(IsModuleInstalled("search")):
 if($arResult["SET_TITLE"]=="Y")
 $APPLICATION->SetTitle(GetMessage("BLOG_TITLE"));*/
 ?>
+
+    <script type="text/javascript">
+        BX.ready(function() {
+            if (!window.RatingLike && top.RatingLike)
+                RatingLike = top.RatingLike;
+
+            if (typeof(RatingLike) == 'undefined')
+                return false;
+
+            RatingLike.Set(
+                'BLOG_POST-2-1525247735',
+                'BLOG_POST',
+                '2',
+                'Y',
+                '848',
+                {'LIKE_Y' : 'Не нравится', 'LIKE_N' : 'Нравится', 'LIKE_D' : 'Это нравится'},
+                'light',
+                ''
+            );
+
+            if (typeof(RatingLikePullInit) == 'undefined')
+            {
+                RatingLikePullInit = true;
+                BX.addCustomEvent("onPullEvent-main", function(command,params) {
+                    if (command == 'rating_vote')
+                    {
+                        RatingLike.LiveUpdate(params);
+                    }
+                });
+            }
+
+
+        });
+    </script>
 
